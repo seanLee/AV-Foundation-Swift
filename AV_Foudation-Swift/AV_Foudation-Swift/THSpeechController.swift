@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 class THSpeechController: UIViewController {
+    var player : AVAudioPlayer!
 
     lazy var synthesizer = AVSpeechSynthesizer()
     //播放中文语音
@@ -29,7 +30,26 @@ class THSpeechController: UIViewController {
 //        for voice in AVSpeechSynthesisVoice.speechVoices() {
 //            print(voice.language)
 //        }
-        beginReading()
+//        beginReading()
+        let playUrl = NSBundle.mainBundle().URLForResource("Mika - Relax, Take It Easy", withExtension: "mp3")
+        if let playUrl = playUrl {
+            do {
+                player = try AVAudioPlayer(contentsOfURL: playUrl)
+                
+                NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleRouteChanged(_:)), name: AVAudioSessionRouteChangeNotification, object: AVAudioSession.sharedInstance())
+                
+                player.volume = 1.0
+                player.pan = -1.0
+                player.prepareToPlay()
+                player.play()
+            } catch {
+                print("AVAudioPlayer is not initializ")
+            }
+        }
+    }
+    
+    @objc private func handleRouteChanged(not: NSNotification) {
+        print(not.userInfo)
     }
     
     private func beginReading() {

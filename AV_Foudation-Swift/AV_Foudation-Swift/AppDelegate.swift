@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = THSpeechController()
         window?.rootViewController = vc
         
+        //配置音频会话
+        AudioManager.setup()
+        
         window?.makeKeyAndVisible()
         return true
     }

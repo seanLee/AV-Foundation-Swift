@@ -10,7 +10,9 @@
 		14083DF01CF349940003440E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14083DEF1CF349940003440E /* AppDelegate.swift */; };
 		14083DF71CF349940003440E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14083DF61CF349940003440E /* Assets.xcassets */; };
 		14083E021CF349F50003440E /* THSpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14083E011CF349F50003440E /* THSpeechController.swift */; };
-		14083E051CF350190003440E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14083E041CF350190003440E /* LaunchScreen.storyboard */; };
+		14F929961D1EAD22005AE3C1 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F929951D1EAD22005AE3C1 /* AudioManager.swift */; };
+		14F929981D1EB304005AE3C1 /* Mika - Relax, Take It Easy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14F929971D1EB304005AE3C1 /* Mika - Relax, Take It Easy.mp3 */; };
+		14F9299A1D1EBDF8005AE3C1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F929991D1EBDF8005AE3C1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +21,9 @@
 		14083DF61CF349940003440E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14083DFB1CF349940003440E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14083E011CF349F50003440E /* THSpeechController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THSpeechController.swift; sourceTree = "<group>"; };
-		14083E031CF350190003440E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14F929951D1EAD22005AE3C1 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		14F929971D1EB304005AE3C1 /* Mika - Relax, Take It Easy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mika - Relax, Take It Easy.mp3"; sourceTree = "<group>"; };
+		14F929991D1EBDF8005AE3C1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		14083DEE1CF349940003440E /* AV_Foudation-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				14083E041CF350190003440E /* LaunchScreen.storyboard */,
+				14F929991D1EBDF8005AE3C1 /* Default-568h@2x.png */,
+				14F929971D1EB304005AE3C1 /* Mika - Relax, Take It Easy.mp3 */,
 				14083DEF1CF349940003440E /* AppDelegate.swift */,
 				14083DF61CF349940003440E /* Assets.xcassets */,
 				14083DFB1CF349940003440E /* Info.plist */,
 				14083E011CF349F50003440E /* THSpeechController.swift */,
+				14F929951D1EAD22005AE3C1 /* AudioManager.swift */,
 			);
 			path = "AV_Foudation-Swift";
 			sourceTree = "<group>";
@@ -120,7 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14083DF71CF349940003440E /* Assets.xcassets in Resources */,
-				14083E051CF350190003440E /* LaunchScreen.storyboard in Resources */,
+				14F929981D1EB304005AE3C1 /* Mika - Relax, Take It Easy.mp3 in Resources */,
+				14F9299A1D1EBDF8005AE3C1 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,24 +138,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F929961D1EAD22005AE3C1 /* AudioManager.swift in Sources */,
 				14083DF01CF349940003440E /* AppDelegate.swift in Sources */,
 				14083E021CF349F50003440E /* THSpeechController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		14083E041CF350190003440E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14083E031CF350190003440E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = "../../Animation-Swift/Animation-Swift";
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		14083DFC1CF349940003440E /* Debug */ = {
@@ -275,6 +271,7 @@
 				14083E001CF349940003440E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
